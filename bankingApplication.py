@@ -1,16 +1,20 @@
 import sys
 
 class banking:
+	'''banking class for bank related operations''' 
 	print("Welcome to SBI")
 	
 	def __init__(self,name,balance=0):
+	'''initialization for customer name and balance'''	
 		self.name = name
 		self.balance = balance
 		
 	def deposit(self,amt):
+	'''deposite option for customer'''	
 		self.balance = self.balance+amt
 		print("Balance after deposit",self.balance)
 	def withdraw(self,amt):
+	'''withdraw option for customer'''	
 		if amt<self.balance:
 			self.balance=self.balance-amt
 			print("Balance after Withdraw",self.balance)
