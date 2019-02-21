@@ -15,7 +15,7 @@ class bank:
 	def withdraw(self,amt,j):
 		'''Withdraw option'''
 		if amt<balance[j]:
-			balance[j] = balance[j]+amt
+			balance[j] = balance[j]-amt
 			print("Amount withdraw successfully")
 		else:
 			print("Insufficient Fund")
@@ -91,7 +91,7 @@ while True:
 				
 			k+=1
 		if(choice!='m' or choice == ''):
-			print("Name is unauthrised")
+			print("unauthrised user")
 				
 	dictionary = {
 				1:createAccount,
