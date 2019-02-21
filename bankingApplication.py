@@ -1,4 +1,5 @@
-
+from array import *
+import sys
 class bank:
 	bankname = "SBI"	
 	
